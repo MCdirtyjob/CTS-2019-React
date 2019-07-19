@@ -29,7 +29,7 @@ export default class PortfolioContainer extends Component {
       .get("https://jameshart.devcamp.space/portfolio/portfolio_items")
       .then(response => {
         this.setState({
-          date: response.data.portfolio_items
+          data: response.data.portfolio_items
         });
       })
       .catch(error => {
